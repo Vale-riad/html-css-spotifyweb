@@ -82,12 +82,26 @@ hr{
     color: aliceblue;
     width:80;
 }
-.user{
-    color: aliceblue;
+
+.circle-arrow {
+    background-color: transparent;
+    color: gray;
+    border: none;
+}
+.arrow {
+    border: 1px solid gray;
+    border-radius: 100%;
+    padding: 7px;
+    text-align: center;
+}
+.circle-user {
+    font-size: 40px;
+    margin-right: 10px;
 }
 
 .aside-bottom{
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
 }
 .logo-small{
