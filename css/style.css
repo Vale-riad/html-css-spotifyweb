@@ -22,16 +22,27 @@ header{
     position: fixed;
     right:0;
     left:300px;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.5);
     justify-content: flex-end;
-    height:90px;
-   
+    padding:10px 10px;
+
 }
+.btn-header{
+    border-color: aliceblue;
+    padding:10px 50px 10px 50px;
+    background-color: #080b12;
+    color:white;
+}
+/* buttons */
+.btn{
+    border-radius: 50px;
+}
+/* buttons */
 /* header */
 .page-container{
     display: flex;
     height: calc(100% - 80px);
-    background-color: aqua;
+    
 }
 /* aside */
 aside{
@@ -42,7 +53,8 @@ aside{
 /* main */
 main{
     width:calc(100% - 300px);
-    overflow-y: auto
+    overflow-y: auto;
+    background-color: #141922;
 }
 /* main */
 /* footer */
