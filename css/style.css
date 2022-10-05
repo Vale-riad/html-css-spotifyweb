@@ -1,0 +1,53 @@
+/* reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* reset */
+body{
+    height:100vh;
+
+}
+img{
+    width:100%;
+}
+/* common */
+.flex{
+    display:flex;
+}
+/* common */
+/* header */
+header{
+    position: fixed;
+    right:0;
+    left:300px;
+    background-color: red;
+    justify-content: flex-end;
+    height:90px;
+   
+}
+/* header */
+.page-container{
+    display: flex;
+    height: calc(100% - 80px);
+    background-color: aqua;
+}
+/* aside */
+aside{
+    width:300px;
+    background-color: blueviolet;
+}
+/* aside */
+/* main */
+main{
+    width:calc(100% - 300px);
+    overflow-y: auto
+}
+/* main */
+/* footer */
+footer{
+    height:80px;
+    background-color: bisque;
+}
+/* footer */
