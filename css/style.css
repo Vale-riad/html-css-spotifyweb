@@ -68,11 +68,17 @@ aside{
 
 li{
     list-style: none;
+    padding-bottom:5px;
+    font-size: 13px;
 }
 .icon-aside{
     padding:15px 0;
     font-size: 15px;
     color:white;
+}
+aside .icon{
+    width:20px;
+  margin-top:5px;
 }
 span{
     color: aliceblue;
@@ -81,10 +87,12 @@ aside i{
     padding:5px;
 }
 
+
 .playlist {
     flex-grow: 1;
     overflow-y: auto;
 }
+
 .download {
     border-bottom: 1px solid #fff;
 }
@@ -93,15 +101,16 @@ aside i{
     color: gray;
     border: none;
     text-align: center;
+    padding:5px;
 }
 .arrow {
     border: 1px solid gray;
     border-radius: 100%;
-    padding: 7px;
+    padding: 5px;
     text-align: center;
 }
 .circle-user {
-    font-size: 20px;
+    font-size: 15px;
     margin-right: 5px;
     color: white;
     text-align: center;
