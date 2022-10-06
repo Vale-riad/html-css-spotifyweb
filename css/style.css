@@ -22,9 +22,6 @@ header{
     left:240px;
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: flex-end;
-    padding:10px 10px;
-    
-
 }
 .btn-header{
     border-color: aliceblue;
@@ -57,23 +54,25 @@ aside{
     flex-direction: column;
     overflow-y: hidden;
     flex-shrink: 0;
+    color: white;
     
 }
+.logo{
+    
+    padding-left: 10px;
+}
 .img-logo{
-    width:70%;
-    padding-left: 50px;
+    width:80px;
+    margin-top:5px;
 }
 
 li{
     list-style: none;
 }
 .icon-aside{
-    padding:15px;
+    padding:15px 0;
     font-size: 15px;
     color:white;
-    margin-left: 10px;
-    overflow-y: auto;
-    
 }
 span{
     color: aliceblue;
@@ -81,18 +80,19 @@ span{
 aside i{
     padding:5px;
 }
-.spazio{
-    padding: 5px;
-}
-hr{
-    color: aliceblue;
-    width:80%;
-}
 
+.playlist {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.download {
+    border-bottom: 1px solid #fff;
+}
 .circle-arrow {
     background-color: transparent;
     color: gray;
     border: none;
+    text-align: center;
 }
 .arrow {
     border: 1px solid gray;
@@ -101,21 +101,20 @@ hr{
     text-align: center;
 }
 .circle-user {
-    font-size: 40px;
-    margin-right: 10px;
+    font-size: 20px;
+    margin-right: 5px;
     color: white;
+    text-align: center;
 }
 
  aside .aside-bottom{
-    display: flex;
-    flex-wrap: wrap;
-margin-top: auto;
+    margin-top: auto;
 }
 .logo-small{
+    display: none;
     width:30%;
     margin:30px;
 }
-
 @media screen and (max-width:600px){
     aside{
         width:100px;
@@ -123,16 +122,26 @@ margin-top: auto;
     .img-logo{
         display:none;
     }
+    .logo-small {
+        display: block;
+    }
     .page-container .hide{
         display: none;
     }
     .aside-bottom span{
         display: none;
     }
-    
 }
 /* aside */
 /* main */
+.secondary-nav ul {
+    flex-wrap: wrap;
+}
+.secondary-nav  li{
+    color: #7d7f84;
+    list-style: none;
+    padding-right: 15px;
+}
 .container-music{
     padding:40px 20px ;
     margin:auto;
@@ -146,27 +155,33 @@ main ul{
     padding-top: 60px;
     justify-content: center;
 }
-main li{
-    color: #7d7f84;
-    list-style: none;
-    padding-right: 15px;
-}
+
 .row{
     flex-wrap: nowrap;
 }
 .col{
     width: calc(100%/6);
+    padding: 10px;
 }
 .col img{
-    width:70%
+    max-width: 100%;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:1100px){
     .row{
         flex-wrap: wrap;
     }
     .col{
+        width:calc(100% /4);
+    }
+    
+}
+
+@media screen and (max-width:700px){
+    .col{
         width:calc(100% /2);
     }
+    
+}
 /* main */
 /* footer */
 footer{

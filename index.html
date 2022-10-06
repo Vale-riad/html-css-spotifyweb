@@ -18,34 +18,39 @@
     </header>
     <div class="page-container">
         <aside>
-            <img class="img-logo" src="img/logo.svg">
-            <img class="logo-small" src="img/logo-small.svg" alt="">
-            <nav class="aside-row">
+            <div class="logo">
+                <img class="img-logo" src="img/logo.svg">
+                <img class="logo-small" src="img/logo-small.svg" alt="">
+            </div>
+            <nav class="main-nav">
                 <ul class="icon-aside">
                     <li><i class="fa-sharp fa-solid fa-house"></i><span class="hide">Home</span></li>
                     <li><i class="fa-sharp fa-solid fa-house"></i><span class="hide">Cerca</span></li>
                     <li><i class="fa-sharp fa-solid fa-house"></i><span class="hide">La tua libreria</span></li>
                 </ul>
+            </nav>
+            <h3>Playlist</h3>
+            <div>
+                <i class="fa-solid fa-square-plus"></i>Crea playlist
+            </div>
+            <nav class="playlist">
                <ul class="icon-aside hide">
-                <li><strong>Playlist</strong></li>
-                <li><i class="fa-solid fa-square-plus"></i>Crea palylist</li>
-                <li class="spazio">nome playlist</li>
-                <li class="spazio">nome playlist</li>
-                <li class="spazio">nome playlist</li>
-                <li class="spazio">nome playlist</li>
-                <li class="spazio">nome playlist</li>
-                <li class="spazio">nome playlist</li>
-                <li class="spazio">nome playlist</li>
+                <li>nome playlist</li>
+                <li>nome playlist</li>
+                <li>nome playlist</li>
+                <li>nome playlist</li>
+                <li>nome playlist</li>
                </ul>
             </nav>
-            <div class="aside-bottom flex">
-                <button class="circle-arrow"><i class="arrow fa-solid fa-arrow-down"></i></button><span class="hide">Installa app</span>
-             <hr>
-             <i class="circle-user fa-solid fa-circle-user"></i><span class="hide">John Doe</span>
+            <div class="aside-bottom">
+                <div class="download">
+                    <button class="circle-arrow"><i class="arrow fa-solid fa-arrow-down"></i></button><span class="hide">Installa app</span>
+                </div>
+                <i class="circle-user fa-solid fa-circle-user"></i><span class="hide">John Doe</span>
             </div>
         </aside>
         <main>
-            <nav>
+            <nav class="secondary-nav">
                 <ul class="flex">
                     <li>IN EVIDENZA</li>
                     <li>PODCAST</li>
@@ -54,30 +59,18 @@
                     <li>NUOVE USCITE</li>
                     <li>SCOPRI</li>
                 </ul>
-                <h2>Recently Played</h2>
             </nav>
-            <div class="container-music">
+            <section class="container-music">
+                <h2>Recently Played</h2>
                 <div class="row flex">
                     <div class="col">
-                    <img src="img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/stranger.jpeg" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/aquietplace.jpeg" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/split.jpeg" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/cure.jpeg" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/sinister.jpeg" alt="">
+                        <div class="image">
+                            <img src="img/metal_lifting.jpg" alt="">
+                        </div>
+                        <h4>Titolo</h4>
                     </div>
                 </div>
-            </div>
+            </section>
           </main>
         </main>
     </div>
