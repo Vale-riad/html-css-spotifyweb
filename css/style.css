@@ -103,6 +103,7 @@ hr{
 .circle-user {
     font-size: 40px;
     margin-right: 10px;
+    color: white;
 }
 
  aside .aside-bottom{
@@ -114,6 +115,7 @@ margin-top: auto;
     width:30%;
     margin:30px;
 }
+
 @media screen and (max-width:600px){
     aside{
         width:100px;
@@ -124,6 +126,10 @@ margin-top: auto;
     .page-container .hide{
         display: none;
     }
+    .aside-bottom span{
+        display: none;
+    }
+    
 }
 /* aside */
 /* main */
@@ -152,8 +158,15 @@ main li{
     width: calc(100%/6);
 }
 .col img{
-    width:50%
+    width:70%
 }
+@media screen and (max-width:600px){
+    .row{
+        flex-wrap: wrap;
+    }
+    .col{
+        width:calc(100% /2);
+    }
 /* main */
 /* footer */
 footer{
