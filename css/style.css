@@ -87,13 +87,17 @@ span{
 aside i{
     padding:5px;
 }
-
-
 .playlist {
     flex-grow: 1;
     overflow-y: auto;
 }
-
+.main-nav li {
+    border-left: 2px solid transparent;
+    margin-right:10px;
+}
+.main-nav li:first-child {
+    border-color: lightgreen;
+}
 .download {
     border-bottom: 1px solid #fff;
 }
@@ -102,7 +106,6 @@ aside i{
     color: gray;
     border: none;
     text-align: center;
-    
 }
 .arrow {
     border: 1px solid gray;
@@ -124,10 +127,9 @@ aside i{
     display: none;
     width:30%;
 }
-
 @media screen and (max-width:600px){
     aside{
-        width:100px;
+        width:50px;
     }
     .img-logo{
         display:none;
@@ -144,6 +146,7 @@ aside i{
     }
     .download{
         border: none;
+}
 }
 /* aside */
 /* main */
