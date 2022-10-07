@@ -126,6 +126,15 @@ aside i{
     display: none;
     width:30%;
 }
+
+aside li:hover{
+    color: white;
+    cursor: pointer;
+}
+aside img:hover{
+    cursor: pointer;
+    color: #ffffff;
+}
 @media screen and (max-width:600px){
     aside{
         width:50px;
@@ -149,11 +158,12 @@ aside i{
 }
 /* aside */
 /* main */
+main a:hover{
+    cursor: pointer;
+    color: #ffffff;
+}
 .secondary-nav{
     padding: 10px 10px;
-}
-.secondary-nav ul:hover {
-    flex-wrap: wrap;
 }
 .secondary-nav  li{
     color: #7d7f84;
@@ -164,10 +174,15 @@ main a{
     text-decoration: none;
     color:#7d7f84;
 }
-.secondary-nav li:first-child{
-    border-left: 2px solid transparent;
-    margin-right:10px;
-    color: lightgreen;
+main.secondary-nav:first-child::before{ 
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 3px;
+    background-color: lightgreen;
+    position: absolute;
+    left: 10px;
+    border-radius: 2px;
 }
 section h2{
     padding:10px;
@@ -210,6 +225,16 @@ main ul{
 .image{
     position:relative;
 }
+img.effects{
+    filter: grayscale(0);
+      transition: grayscale 0.5s;
+      cursor: pointer;
+}
+img.effects:hover{
+    filter: grayscale(0.5);
+    
+
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -235,14 +260,7 @@ main ul{
     text-align: center;
   }
   
-img.effects{
-    filter: grayscale(0);
-      transition: grayscale 0.5s;
-}
-img.effects:hover{
-    filter: grayscale(0.5);
 
-}
 @media screen and (max-width:1100px){
     .row{
         flex-wrap: wrap;
@@ -252,18 +270,25 @@ img.effects:hover{
     }
     
 }
-
 @media screen and (max-width:700px){
     .col{
         width:calc(100% /2);
     }
-    .secondary-nav{
+    .secondary-nav .flex{
         flex-wrap: wrap;
     }
     
 }
-@media screen and (max-width:600px){
-    .secondary-nav:
+@media screen and (max-width:600x){
+    .col{
+        width:calc(100% /2);
+    }
+    .secondary-nav .flex{
+
+        flex-wrap: wrap;
+    }
+}
+
 /* main */
 /* footer */
 footer{
