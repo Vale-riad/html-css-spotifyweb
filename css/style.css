@@ -7,6 +7,7 @@
 /* reset */
 body{
     height:100vh;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -29,6 +30,7 @@ header{
     background-color: #080b12;
     color:white;
 }
+
 @media screen and (max-width: 600px) {
     header {
         left: 50px;
@@ -57,11 +59,7 @@ aside{
     color: white;
     
 }
-.logo{
-    
-    
-    
-}
+
 .img-logo{
     width:80px;
     margin-top:5px;
@@ -71,18 +69,19 @@ li{
     list-style: none;
     padding-bottom:5px;
     font-size: 13px;
+    color: #6b6b6b;
 }
 .icon-aside{
     padding:15px 0;
     font-size: 15px;
-    color:white;
+    color:#ffffff;
 }
 aside .icon{
     width:20px;
   margin-top:5px;
 }
 span{
-    color: aliceblue;
+    color: #6b6b6b;
 }
 aside i{
     padding:5px;
@@ -150,13 +149,29 @@ aside i{
 }
 /* aside */
 /* main */
-.secondary-nav ul {
+.secondary-nav{
+    padding: 10px 10px;
+}
+.secondary-nav ul:hover {
     flex-wrap: wrap;
 }
 .secondary-nav  li{
     color: #7d7f84;
     list-style: none;
     padding-right: 15px;
+}
+main a{
+    text-decoration: none;
+    color:#7d7f84;
+}
+.secondary-nav li:first-child{
+    border-left: 2px solid transparent;
+    margin-right:10px;
+    color: lightgreen;
+}
+section h2{
+    padding:10px;
+    color:#ffffff;
 }
 .container-music{
     padding:40px 20px ;
@@ -182,6 +197,25 @@ main ul{
 .col img{
     max-width: 100%;
 }
+
+.container-music h4{
+    text-align: center;
+    color: #ffffff;
+    padding:5px 0;
+}
+.container-music h6{
+    color: #7d7f84;
+    text-align: center;
+
+}
+.container-music img .effects{
+    filter: grayscale(1);
+      transition: grayscale 0.5s;
+}
+img .effects:hover{
+    filter: grayscale(0);
+
+}
 @media screen and (max-width:1100px){
     .row{
         flex-wrap: wrap;
@@ -195,6 +229,9 @@ main ul{
 @media screen and (max-width:700px){
     .col{
         width:calc(100% /2);
+    }
+    .secondary-nav{
+        flex-wrap: wrap;
     }
     
 }
