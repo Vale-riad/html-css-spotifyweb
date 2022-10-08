@@ -369,4 +369,13 @@ footer{
     color:#6b6b6b;
     font-size: 10px;;
 }
+.icon-footer-left{
+    padding:20px;
+    color: #ffffff;
+    font-size:12px;
+}
+.fa-heart{
+    padding:10px;
+}
+
 footer */
