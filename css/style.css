@@ -90,15 +90,20 @@ aside i{
     flex-grow: 1;
     overflow-y: auto;
 }
-.main-nav li {
+.main-nav li:first-child {
     border-left: 2px solid transparent;
     margin-right:10px;
+    height:30px;
+    
 }
+
 .main-nav li:first-child {
     border-color: lightgreen;
+   
 }
 .download {
     border-bottom: 1px solid #fff;
+    
 }
 .circle-arrow {
     background-color: transparent;
@@ -258,6 +263,34 @@ img.effects:hover{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
+  .container-music2{
+    padding:40px 20px ;
+    margin:auto;
+}
+.container-music2 h2{
+    color: #ffffff;
+
+}
+.container-music2 h6{
+    color:#6b6b6b;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.container-music3{
+    padding:40px 20px ;
+    margin:auto;
+}
+.container-music3 h2{
+color:#ffffff;
+}
+.container-music-3 h6{
+    color:#6b6b6b;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.rounded{
+    clip-path: circle();
+}
 @media screen and (max-width:1100px){
     .row{
         flex-wrap: wrap;
@@ -287,9 +320,13 @@ img.effects:hover{
         width:calc(100% /2);
     }
     .secondary-nav .flex{
-      flex-wrap: wrap;
+        width:60%;
+        flex-wrap: wrap;
+        
+      
 
     }
+    
 }
 /* main */
 /* footer */
